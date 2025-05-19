@@ -25,11 +25,11 @@
                 <td id="use_nama_barang">-</td>
               </tr>
               <tr>
-                <th scope="row" style="background-color: #e4fff2;">Jumlah</th>
-                <td style="background-color: #e4fff2">
+                <th scope="row" class="table-bg-input">Jumlah</th>
+                <td class="table-bg-input">
                   <div id="use_jumlah_barang">-</div>
                   <br />
-                  <b>Jumlah barang yang akan di pakai:</b> <input type="number" id="use_input_jumlah_barang" name="jumlah_barang" class="form-control" min="0" value="0" required>
+                  <b class="text-danger">Jumlah barang yang akan di pakai:</b> <input type="number" id="use_input_jumlah_barang" name="jumlah_barang" class="form-control" min="0" value="0" required>
                 </td>
               </tr>
               <tr>

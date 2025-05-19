@@ -1,10 +1,16 @@
-body { font-size:0.9rem }
-table.dataTable thead th { white-space: nowrap; }
+body { 
+    font-size:0.9rem 
+}
+
+table.dataTable thead th { 
+    white-space: nowrap; 
+}
 
 #main {
     margin-top: 32px;
 }
 
-.table-bg-input {
+table.table tbody tr th.table-bg-input,
+table.table tbody tr td.table-bg-input {
     background-color: #e4fff2;
 }

@@ -15,6 +15,15 @@
     var BASE_URL = '<?= BASE_URL ?>';
   </script>
 
+  <!-- 
+  Nama    : Marsani
+  NIM     : 230401010282
+  Kelas   : IF404
+  Matkul  : Pemrograman Web II
+  Prodi   : Informatika PJJ S1 
+  Dosen   : Riad Sahara, S.SI., M.T. 
+  -->
+
 </head>
 <body class="bg-light">
 
@@ -37,7 +46,7 @@
           <a class="nav-link active" href="index.php">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="print_inventory.php" target="_blank">Print Laporan</a>
+          <a class="nav-link" href="<?php BASE_URL ?>print/inventory" target="_blank">Print Laporan</a>
         </li>
       </ul>
 
@@ -73,6 +82,7 @@
           <h6>Teknologi yang digunakan:</h6>
           <ul>
             <li>PHP</li>
+            <li>MVC</li>
             <li>Bootstrap 5, HTML5, CSS3</li>
             <li>Javascript, jQuery, Ajax</li>
             <li>DataTables</li>
@@ -93,7 +103,7 @@
         <p>
           Dikembangkan oleh: <strong>Marsani</strong><br />
           Email: marsani@example.com<br />
-          Github: <a href="https://github.com/marsanix/" target="_blank">marsanix</a><br />
+          Github: <a href="https://github.com/marsanix/inventory_php" target="_blank">marsanix/inventory</a><br />
         </p>
  
         <p>Versi: 1.0.0</p>
@@ -126,8 +136,8 @@
       <div class="col-md-3 mb-3">
         <h6>Menu</h6>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Dashboard</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Print Laporan</a></li>
+          <li><a href="<?php BASE_URL ?>" class="text-white text-decoration-none">Dashboard</a></li>
+          <li><a href="<?php BASE_URL ?>print/inventory" target="_blank" class="text-white text-decoration-none">Print Laporan</a></li>
           <li><a href="#" class="text-white text-decoration-none" data-bs-toggle="modal" data-bs-target="#aboutModal">Tentang Aplikasi</a></li>
         </ul>
       </div>

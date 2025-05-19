@@ -52,6 +52,7 @@
   </tbody>
 </table>
 
+<?php require_once '../app/views/Inventory/InventoryAdd.php'; ?>
 <?php require_once '../app/views/Inventory/InventoryAddStock.php'; ?>
 <?php require_once '../app/views/Inventory/InventoryEdit.php'; ?> 
 <?php require_once '../app/views/Inventory/InventoryUse.php'; ?>

@@ -201,6 +201,14 @@ class InventoryController extends Controller
         $this->renderView('Inventory/Inventory', ["inventory" => $inventory], $inventory['title']);
     }
 
+    public function printInventory()
+    {
+        $inventoryModel = $this->loadModel("Inventory");
+        $inventories = $inventoryModel->getAllInventories();
+        $this->renderPrint('Inventory/InventoryPrint', ["inventories" => $inventories]);
+    }
+
+
 
 
 }

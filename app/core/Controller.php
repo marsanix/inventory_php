@@ -31,4 +31,12 @@ class Controller
         // Include the layout file from the views directory
         require_once '../app/views/layout.php';
     }
+
+    protected function renderPrint($viewPath, $data = [], $title = "InventoryApp")
+    {
+        // Extract the data array into individual variables
+        extract($data);
+        // Include the layout file from the views directory
+        require_once '../app/views/layoutPrint.php';
+    }
 }

@@ -1,0 +1,62 @@
+
+@media print {
+  /* Hilangkan semua elemen yang bukan bagian laporan */
+  body * {
+    visibility: hidden;
+  }
+
+  .no-print {
+    display: none;
+    }
+
+  /* Hanya tampilkan bagian laporan */
+  #print-area, #print-area * {
+    visibility: visible;
+  }
+
+  #print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  /* Hilangkan shadow dan background warna dari Bootstrap */
+  .table, .table th, .table td {
+    background-color: #fff !important;
+    box-shadow: none !important;
+    color: #000 !important;
+  }
+
+  /* Sembunyikan elemen navigasi, tombol, dsb */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Hindari pemisahan tabel di tengah halaman */
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  /* Margin halaman cetak */
+  @page {
+    margin: 20mm;
+  }
+}

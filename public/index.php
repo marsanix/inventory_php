@@ -1,4 +1,14 @@
 <?php
+
+/**
+Nama    : Marsani
+NIM     : 230401010282
+Kelas   : IF404
+Matkul  : Pemrograman Web II
+Prodi   : Informatika PJJ S1 
+Dosen   : Riad Sahara, S.SI., M.T. 
+*/
+
 // Include the configuration file
 require_once "../app/config/config.php";
 

@@ -26,4 +26,6 @@ $routes = [
 
      // Route for adding a new inventory, maps to the 'addInventory' method of 'InventoryController'
     'inventory/useItem' => ['controller' => 'InventoryController', 'method' => 'useItem'],
+
+    'print/inventory' => ['controller' => 'InventoryController', 'method' => 'printInventory'],
 ];
