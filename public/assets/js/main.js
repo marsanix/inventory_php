@@ -367,7 +367,7 @@ $(document).ready(function () {
         if (res.status == 'success') {
           $('#deleteModal').modal('hide');
           // Reload DataTable atau update UI
-          $('#dataTable').DataTable().ajax.reload();
+          table.ajax.reload(null, false);
 
           $.toast({
                 heading: 'Success',
