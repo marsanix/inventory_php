@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * Configuration file for the application
+ * 
+ * File ini berisi detail koneksi database dan URL dasar untuk aplikasi.
+ * 
+ * @package config
+ * @author Marsani
+ * @version 1.0
+ */
 class Inventory
 {
     private $db;

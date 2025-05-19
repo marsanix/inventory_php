@@ -1,6 +1,17 @@
 <?php
 
-// Define the App class
+/**
+ * App Class
+ * 
+ * Kelas ini bertanggung jawab untuk menangani perutean aplikasi dan instantiasi pengontrol.
+ * Ini mem -parsing URL, menentukan pengontrol dan metode yang tepat untuk menelepon, dan melewati parameter apa pun.
+ * 
+ * @package App
+ * @author Marsani
+ * @version 1.0
+ */
+
+ // Tentukan kelas aplikasi
 class App
 {
     // Initialize default controller to be used

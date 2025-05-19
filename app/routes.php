@@ -1,5 +1,4 @@
 <?php
-
 // Define an array of routes for the application
 $routes = [
     // Route for the home page, maps to the 'index' method of 'InventoryController'
@@ -27,5 +26,6 @@ $routes = [
      // Route for adding a new inventory, maps to the 'addInventory' method of 'InventoryController'
     'inventory/useItem' => ['controller' => 'InventoryController', 'method' => 'useItem'],
 
+    // Route for printing the inventory, maps to the 'printInventory' method of 'InventoryController'
     'print/inventory' => ['controller' => 'InventoryController', 'method' => 'printInventory'],
 ];

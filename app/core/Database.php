@@ -1,4 +1,14 @@
 <?php
+/**
+ * Kelas Database untuk Menangani Koneksi dan Kueri Basis Data
+ * 
+ * Kelas ini menyediakan metode untuk terhubung ke database MySQL menggunakan PDO,
+ * Persiapkan dan jalankan pernyataan SQL, dan ambil hasil.
+ * 
+ * @package core
+ * @author Marsani
+ * @version 1.0
+ */
 
 // Define a class named Database
 class Database

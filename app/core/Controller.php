@@ -1,6 +1,15 @@
 <?php
+/*
+ * Controller class for the application
+ * 
+ * Kelas ini menyediakan metode untuk memuat model dan memberikan tampilan.
+ * 
+ * @package core
+ * @author Marsani
+ * @version 1.0
+ */
 
-// Define the Controller class
+ // Define the Controller class
 class Controller
 {
     // Method to load a model
@@ -32,6 +41,8 @@ class Controller
         require_once '../app/views/layout.php';
     }
 
+    // Method to render a view for printing
+    // Takes the view path, data array, and optional title as parameters
     protected function renderPrint($viewPath, $data = [], $title = "InventoryApp")
     {
         // Extract the data array into individual variables
