@@ -17,10 +17,10 @@ class Controller
 
     // This will load the model from the models directory
     // 
-    // ex: Book model from Book.php
+    // ex: Inventory model from Inventory.php
     // ------------------------------------------
-    // require_once '../app/models/Book.php';
-    // return new Book;
+    // require_once '../app/models/Inventory.php';
+    // return new Inventory;
     // ------------------------------------------
 
     protected function loadModel($model)

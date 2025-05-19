@@ -20,11 +20,11 @@ class Inventory
     public function getAllInventories(): array
     {
 
-        // Prepare a SQL query to select all records from the book table
+        // Siapkan query SQL untuk mengambil semua data dari tabel tb_inventory
         $this->db->query("SELECT * FROM tb_inventory ORDER BY id_barang DESC");
-        // Execute the prepared query
+        // Jalankan query yang disiapkan
         $this->db->execute();
-        // Return the results of the query
+        // Mengembalikan hasil query
         return $this->db->results();
     }
 
@@ -50,8 +50,7 @@ class Inventory
                      satuan_barang, harga_beli, status_barang)
                     VALUES (:kode, :barcode, :nama, :jumlah, :satuan, :harga, :status)";
             $this->db->query($sql);
-                // Prepare a SQL query to insert a new record into the book table
-            // $this->db->query("INSERT INTO book (isbn, title, author) VALUES (:isbn, :title, :author)");
+
             $this->db->bind(':kode', $data['kode_barang']);
             $this->db->bind(':barcode', $data['barcode_barang']);
             $this->db->bind(':nama', $data['nama_barang']);

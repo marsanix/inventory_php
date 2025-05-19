@@ -9,7 +9,7 @@ $routes = [
 
     'inventory/list' => ['controller' => 'InventoryController', 'method' => 'getAllInventories'],
 
-    // Route for a specific inventory page, maps to the 'bookId' method of 'InventoryController'
+    // Route for a specific inventory page, maps to the 'id' method of 'InventoryController'
     'inventory/id' => ['controller' => 'InventoryController', 'method' => 'inventoryById'],
 
     // Route for adding a new inventory, maps to the 'addInventory' method of 'InventoryController'
